@@ -1,19 +1,19 @@
-[Inicio] --> B[Usuario accede a la aplicación web]
---> C{¿Usuario registrado?}
--- Sí --> D[Login]
--- No --> E[Registro de usuario]
+[Inicio] --> [Usuario accede a la aplicación web]
+--> {¿Usuario registrado?}
+-- Sí --> [Login]
+-- No --> [Registro de usuario]
 
---> F[Explorar menú]
---> F[Explorar menú]
+--> [Explorar menú]
+--> [Explorar menú]
 
---> G[Seleccionar productos]
---> H[Añadir al carrito]
---> I{¿Finalizar compra?}
+--> [Seleccionar productos]
+--> [Añadir al carrito]
+--> {¿Finalizar compra?}
 
 -- No --> F
 -- Sí --> J[Confirmar pedido]
 
---> K[Backend procesa pedido (Node.js + Express)]
---> L[Guardar datos en Firebase Firestore]
---> M[Mostrar confirmación al usuario]
---> N[Fin]
+--> [Backend procesa pedido (Node.js + Express)]
+--> [Guardar datos en Firebase Firestore]
+--> [Mostrar confirmación al usuario]
+--> [Fin]
