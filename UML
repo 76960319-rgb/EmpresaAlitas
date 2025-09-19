@@ -1,0 +1,19 @@
+[Inicio] --> B[Usuario accede a la aplicación web]
+--> C{¿Usuario registrado?}
+-- Sí --> D[Login]
+-- No --> E[Registro de usuario]
+
+--> F[Explorar menú]
+--> F[Explorar menú]
+
+--> G[Seleccionar productos]
+--> H[Añadir al carrito]
+--> I{¿Finalizar compra?}
+
+-- No --> F
+-- Sí --> J[Confirmar pedido]
+
+--> K[Backend procesa pedido (Node.js + Express)]
+--> L[Guardar datos en Firebase Firestore]
+--> M[Mostrar confirmación al usuario]
+--> N[Fin]
